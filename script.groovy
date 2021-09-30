@@ -3,10 +3,8 @@ git branch: 'main', url: 'https://github.com/spring-guides/gs-gradle'
 }
 def build(){
     script{
-        dir("complete"){
-            sh ./gradlew clean build
-            sh ./gradlew jar
-        }
+    cd complete && ./gradlew clean build
+    cd complete && ./gradlew jar
     }
 }
 def artifact(){
