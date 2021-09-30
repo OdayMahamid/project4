@@ -5,7 +5,7 @@ def build(){
     script{
         dir("complete"){
             sh ./gradlew clean build
-            sh /gradlew jar
+            sh ./gradlew jar
         }
     }
 }
