@@ -15,7 +15,7 @@ pipeline {
                 stage("clone"){
             
             steps{
-                gv.clone
+                gv.clone()
             }
             
         }
