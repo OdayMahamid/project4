@@ -1,11 +1,11 @@
 def clone(){
-git branch: 'main', url: 'https://github.com/spring-guides/gs-gradle'
+  git branch: 'master', credentialsId: 'ea80b490-f30e-4f61-b8b3-426d8202c73e', url: 'https://github.com/jleetutorial/maven-project.git'
 }
 def build(){
  sh 'mvn package'
 }
 def artifact(){
-  archiveArtifacts artifacts: '**/*.tar', followSymlinks: false
+  archiveArtifacts artifacts: '**/*.war', followSymlinks: false
 }
 return this
 
